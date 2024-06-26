@@ -1,0 +1,1340 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>–MEMPREDIKSI LOKASI YEAST (RAGI) BERDASARKAN PROTEIN– &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Proyek Penambangan Data (Personel)';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">–MEMPREDIKSI LOKASI YEAST (RAGI) BERDASARKAN PROTEIN–</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FProyek Penambangan Data (Personel).html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Proyek Penambangan Data (Personel).ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>–MEMPREDIKSI LOKASI YEAST (RAGI) BERDASARKAN PROTEIN–</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">–MEMPREDIKSI LOKASI YEAST (RAGI) BERDASARKAN PROTEIN–</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-yeast">1.1 Apa itu Yeast</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-dari-studi-kasus-ini">1.2 Tujuan dari Studi kasus ini</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-pemahaman-data">2. Data Understanding (Pemahaman Data)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengumpulan-data-collection-data">2.1 Pengumpulan Data (collection data)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-data">2.1.1 Sumber Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#akses-data">2.1.2 Akses Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-data">2.2 Deskripsi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">2.2.1 Visualisasi Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-fitur">2.2.2 Penjelasan Fitur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-klasifikasi">2.2.3 Penjelasan Klasifikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggabungan-data">2.2 Penggabungan Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-pemrosesan-awal-data">3. Preprocessing (Pemrosesan awal data)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-data">3.1 Kualitas data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengecekkan-missing-value">3.1.1 Pengecekkan Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengecekkan-outlier">3.1.2 Pengecekkan Outlier</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#permodelan">4. Permodelan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permodelan-dengan-menggunakan-knn">4.1 Permodelan dengan menggunakan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permodelan-dengan-menggunakan-naive-bayes">4.2 Permodelan dengan menggunakan Naive Bayes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediksi-data">4.3 Prediksi Data</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">5. Evaluasi</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="memprediksi-lokasi-yeast-ragi-berdasarkan-protein">
+<h1>–MEMPREDIKSI LOKASI YEAST (RAGI) BERDASARKAN PROTEIN–<a class="headerlink" href="#memprediksi-lokasi-yeast-ragi-berdasarkan-protein" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pendahuluan">
+<h1>1. Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h1>
+<section id="apa-itu-yeast">
+<h2>1.1 Apa itu Yeast<a class="headerlink" href="#apa-itu-yeast" title="Link to this heading">#</a></h2>
+<p>Yeast atau dalam bahasa indonesia Ragi merupakan mikroorganisme bersel satu yang termasuk dalam kerajaan fungi. Ragi dapat menyebabkan fermentasi. Ragi sendiri biasanya sering digunakan dalam dunia industri makanan dan minuman hasil fermentasi seperti acar, tempe, tape, roti dlsbnya. didalam ragi sendiri mengandung Nutritional yeast, biasanya sebagai suplemen makanan yang mengandung berbagai nutrisi penting seperti protein, vitamin B, dan mineral. Ini sering digunakan oleh vegetarian dan vegan sebagai sumber vitamin B12. Selain digunakan dalam industri makanan dan minuman, yeast juga digunakan dalam bioteknologi dan penelitian ilmiah. Misalnya, yeast sering digunakan sebagai model organisme dalam penelitian genetika dan biologi sel karena siklus hidupnya yang cepat dan genom yang sederhana. Mikroorganisme yang digunakan di dalam ragi umumnya terdiri atas berbagai bakteri dan fungi (khamir dan kapang), yaitu Rhizopus, Aspergillus, Mucor, Amylomyces, Endomycopsis, Saccharomyces, Hansenula anomala,, Lactobacillus, Acetobacter, dan sebagainya.</p>
+</section>
+<section id="tujuan-dari-studi-kasus-ini">
+<h2>1.2 Tujuan dari Studi kasus ini<a class="headerlink" href="#tujuan-dari-studi-kasus-ini" title="Link to this heading">#</a></h2>
+<p>Tujuan dari menganalisis dataset ini untuk mengetahui location site ragi berdasarkan protein didalamnya. didalam data ini terdapat beberapa fitur yang akan dianalisis untuk dapat mengetahui location site ragi.</p>
+<p>Pendekatan yang akan digunakan dalam studi kasus ini meliputi:</p>
+<ul class="simple">
+<li><p>Pemahaman Data ( data understanding)</p></li>
+</ul>
+<ul class="simple">
+<li><p>Pemrosesan awal data (Preprocessing )</p></li>
+</ul>
+<ul class="simple">
+<li><p>Pemodelan (model klasifikasi)</p></li>
+</ul>
+<ul class="simple">
+<li><p>Evaluasi</p></li>
+</ul>
+<ul class="simple">
+<li><p>Implementasi</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-understanding-pemahaman-data">
+<h1>2. Data Understanding (Pemahaman Data)<a class="headerlink" href="#data-understanding-pemahaman-data" title="Link to this heading">#</a></h1>
+<section id="pengumpulan-data-collection-data">
+<h2>2.1 Pengumpulan Data (collection data)<a class="headerlink" href="#pengumpulan-data-collection-data" title="Link to this heading">#</a></h2>
+<section id="sumber-data">
+<h3>2.1.1 Sumber Data<a class="headerlink" href="#sumber-data" title="Link to this heading">#</a></h3>
+<p>Dataset Yeast (Ragi) yang berisi informasi tentang protein dan Location site yang akan digunakan dalam proyek ini didapatkan dari database UCI Machine Learning Repository. berikut link dari database Uci yang saya gunakan (<a class="reference external" href="https://archive.ics.uci.edu/dataset/110/yeast">https://archive.ics.uci.edu/dataset/110/yeast</a>)</p>
+</section>
+<section id="akses-data">
+<h3>2.1.2 Akses Data<a class="headerlink" href="#akses-data" title="Link to this heading">#</a></h3>
+<p>untuk mengakses data dari database UCI Machine Learning Repository agar dapat diolah perlu untuk mengistal ucimlrepo package yang telah disediakan UCI Machine Learning Repository .</p>
+<p>Untuk mengambil dataset Yeast (Ragi) dari database UCI Machine Learning Repository.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
+  
+<span class="c1"># fetch dataset </span>
+<span class="n">yeast</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">110</span><span class="p">)</span> 
+
+<span class="c1"># data (as pandas dataframes) </span>
+<span class="n">Df_Yeast</span> <span class="o">=</span> <span class="n">yeast</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
+
+<span class="c1"># menampilkan data</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Df_Yeast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-1-a0f9b0124ae9&gt;</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># fetch dataset</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">yeast</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">110</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;ucimlrepo&#39;
+
+<span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NOTE</span>: If your import is failing due to a missing package, you can
+<span class="n">manually</span> <span class="n">install</span> <span class="n">dependencies</span> <span class="n">using</span> <span class="n">either</span> <span class="o">!</span>pip<span class="w"> </span>or<span class="w"> </span>!apt.
+
+<span class="n">To</span> <span class="n">view</span> <span class="n">examples</span> <span class="n">of</span> <span class="n">installing</span> <span class="n">some</span> <span class="n">common</span> <span class="n">dependencies</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span>
+<span class="s2">&quot;Open Examples&quot;</span> <span class="n">button</span> <span class="n">below</span><span class="o">.</span>
+<span class="gt">---------------------------------------------------------------------------</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="deskripsi-data">
+<h2>2.2 Deskripsi Data<a class="headerlink" href="#deskripsi-data" title="Link to this heading">#</a></h2>
+<section id="visualisasi-data">
+<h3>2.2.1 Visualisasi Data<a class="headerlink" href="#visualisasi-data" title="Link to this heading">#</a></h3>
+<p>Visualisasi data dapat membantu kita untuk mengidentifikasi data yang telah diperoleh.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">Df_Yeast</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<a class="reference internal image-reference" href="_images/e9e13b3b74e1a8c171878bc71a2342161cc88ec7928ffad7055263d9a7d6dec8.png"><img alt="_images/e9e13b3b74e1a8c171878bc71a2342161cc88ec7928ffad7055263d9a7d6dec8.png" src="_images/e9e13b3b74e1a8c171878bc71a2342161cc88ec7928ffad7055263d9a7d6dec8.png" style="width: 832px; height: 836px;" /></a>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Df_Yeast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mcg</th>
+      <th>gvh</th>
+      <th>alm</th>
+      <th>mit</th>
+      <th>erl</th>
+      <th>pox</th>
+      <th>vac</th>
+      <th>nuc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.58</td>
+      <td>0.61</td>
+      <td>0.47</td>
+      <td>0.13</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.48</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.43</td>
+      <td>0.67</td>
+      <td>0.48</td>
+      <td>0.27</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.53</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.64</td>
+      <td>0.62</td>
+      <td>0.49</td>
+      <td>0.15</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.53</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.58</td>
+      <td>0.44</td>
+      <td>0.57</td>
+      <td>0.13</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.54</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.42</td>
+      <td>0.44</td>
+      <td>0.48</td>
+      <td>0.54</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.48</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1479</th>
+      <td>0.81</td>
+      <td>0.62</td>
+      <td>0.43</td>
+      <td>0.17</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.53</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>1480</th>
+      <td>0.47</td>
+      <td>0.43</td>
+      <td>0.61</td>
+      <td>0.40</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.48</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <th>1481</th>
+      <td>0.67</td>
+      <td>0.57</td>
+      <td>0.36</td>
+      <td>0.19</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.56</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>1482</th>
+      <td>0.43</td>
+      <td>0.40</td>
+      <td>0.60</td>
+      <td>0.16</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.53</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <th>1483</th>
+      <td>0.65</td>
+      <td>0.54</td>
+      <td>0.54</td>
+      <td>0.13</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.53</td>
+      <td>0.22</td>
+    </tr>
+  </tbody>
+</table>
+<p>1484 rows × 8 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="penjelasan-fitur">
+<h3>2.2.2 Penjelasan Fitur<a class="headerlink" href="#penjelasan-fitur" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ringkasan informasi Fitur</span>
+<span class="n">Df_Yeast</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 1484 entries, 0 to 1483
+Data columns (total 8 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   mcg     1484 non-null   float64
+ 1   gvh     1484 non-null   float64
+ 2   alm     1484 non-null   float64
+ 3   mit     1484 non-null   float64
+ 4   erl     1484 non-null   float64
+ 5   pox     1484 non-null   float64
+ 6   vac     1484 non-null   float64
+ 7   nuc     1484 non-null   float64
+dtypes: float64(8)
+memory usage: 92.9 KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>dari code diatas dapat diketahui jumlah baris, kolom dan juga type data. dijelaskan sebagai berikut ini :</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Df_Yeast</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1484, 8)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dapat dilihat bahwa dataset memiliki jumlah baris 1484 dan memiliki 8 kolom yang terdiri dari :</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Df_Yeast</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;mcg&#39;, &#39;gvh&#39;, &#39;alm&#39;, &#39;mit&#39;, &#39;erl&#39;, &#39;pox&#39;, &#39;vac&#39;, &#39;nuc&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Mcg merupakan Metode McGeoch untuk pengenalan urutan sinyal.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Gvh merupakan Metode von Heijne untuk pengenalan urutan sinyal.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Alm merupakan Skor program prediksi wilayah rentang membran ALOM.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Mit merupakan Skor analisis diskriminan kandungan asam amino daerah terminal-N (20 residu panjang) protein mitokondria dan non-mitokondria.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Erl merupakan Kehadiran substring HDEL (dianggap bertindak sebagai sinyal untuk retensi dalam lumen retikulum endoplasma).</p></li>
+</ul>
+<ul class="simple">
+<li><p>Pox merupakan Sinyal penargetan peroksisomal di C-terminus.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Vac merupakan Skor analisis diskriminan kandungan asam amino vakuolar dan protein ekstraseluler.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Nuc merupakan Skor analisis diskriminan sinyal lokalisasi nuklir protein nuklir dan non-nuklir.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Df_Yeast</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mcg    float64
+gvh    float64
+alm    float64
+mit    float64
+erl    float64
+pox    float64
+vac    float64
+nuc    float64
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dari code diatas diketahui tipe data dari masing masing fitur pada dataset sebagai berikut :</p>
+<ul class="simple">
+<li><p>mcg memiliki tipe data numerik</p></li>
+</ul>
+<ul class="simple">
+<li><p>gvh  memiliki tipe data numerik</p></li>
+</ul>
+<ul class="simple">
+<li><p>alm  memiliki tipe data numerik</p></li>
+</ul>
+<ul class="simple">
+<li><p>mit  memiliki tipe data numerik</p></li>
+</ul>
+<ul class="simple">
+<li><p>erl  memiliki tipe data numerik</p></li>
+</ul>
+<ul class="simple">
+<li><p>pox memiliki tipe data numerik</p></li>
+</ul>
+<ul class="simple">
+<li><p>vac memiliki tipe data numerik</p></li>
+</ul>
+<ul class="simple">
+<li><p>nuc memiliki tipe data numerik.</p></li>
+</ul>
+</section>
+<section id="penjelasan-klasifikasi">
+<h3>2.2.3 Penjelasan Klasifikasi<a class="headerlink" href="#penjelasan-klasifikasi" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data class</span>
+<span class="n">Dft_Yeast</span> <span class="o">=</span> <span class="n">yeast</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">targets</span>
+
+<span class="c1"># menghitung jumlah data class</span>
+<span class="n">value_count</span> <span class="o">=</span> <span class="n">Dft_Yeast</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">value_count</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah data class:&quot;</span><span class="p">,</span> <span class="n">value_count</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>localization_site
+CYT                  463
+NUC                  429
+MIT                  244
+ME3                  163
+ME2                   51
+ME1                   44
+EXC                   35
+VAC                   30
+POX                   20
+ERL                    5
+Name: count, dtype: int64
+Jumlah data class: 1484
+</pre></div>
+</div>
+</div>
+</div>
+<p>localization site dari CYT berjumlah 463, dari NUC berjumlah 429, dari MIT berjumlah 244 dlsbnya. total dari localization_site berjumlah 1484 data</p>
+</section>
+<section id="penggabungan-data">
+<h3>2.2 Penggabungan Data<a class="headerlink" href="#penggabungan-data" title="Link to this heading">#</a></h3>
+<p>menggabungkan fitur dengan class sebelum melakukan processing Data, dikarenakan data sebelumnya antara fitur dengan class dipisah</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Df_Yeast</span> <span class="o">=</span> <span class="n">Df_Yeast</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">Dft_Yeast</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Df_Yeast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       mcg   gvh   alm   mit  erl  pox   vac   nuc localization_site
+0     0.58  0.61  0.47  0.13  0.5  0.0  0.48  0.22               MIT
+1     0.43  0.67  0.48  0.27  0.5  0.0  0.53  0.22               MIT
+2     0.64  0.62  0.49  0.15  0.5  0.0  0.53  0.22               MIT
+3     0.58  0.44  0.57  0.13  0.5  0.0  0.54  0.22               NUC
+4     0.42  0.44  0.48  0.54  0.5  0.0  0.48  0.22               MIT
+...    ...   ...   ...   ...  ...  ...   ...   ...               ...
+1479  0.81  0.62  0.43  0.17  0.5  0.0  0.53  0.22               ME2
+1480  0.47  0.43  0.61  0.40  0.5  0.0  0.48  0.47               NUC
+1481  0.67  0.57  0.36  0.19  0.5  0.0  0.56  0.22               ME2
+1482  0.43  0.40  0.60  0.16  0.5  0.0  0.53  0.39               NUC
+1483  0.65  0.54  0.54  0.13  0.5  0.0  0.53  0.22               CYT
+
+[1484 rows x 9 columns]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="preprocessing-pemrosesan-awal-data">
+<h2>3. Preprocessing (Pemrosesan awal data)<a class="headerlink" href="#preprocessing-pemrosesan-awal-data" title="Link to this heading">#</a></h2>
+</section>
+<section id="kualitas-data">
+<h2>3.1 Kualitas data<a class="headerlink" href="#kualitas-data" title="Link to this heading">#</a></h2>
+<section id="pengecekkan-missing-value">
+<h3>3.1.1 Pengecekkan Missing Value<a class="headerlink" href="#pengecekkan-missing-value" title="Link to this heading">#</a></h3>
+<p>Missing value atau nilai yang hilang adalah kondisi di mana terdapat data yang tidak lengkap atau tidak tersedia dalam sebuah data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pengecekkan Missing value</span>
+<span class="n">missing_value</span><span class="o">=</span> <span class="n">Df_Yeast</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah missing pada data:&quot;</span><span class="p">,</span> <span class="n">missing_value</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah missing pada data: 0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tidak ditemukan missing value setelah dilakukan pengecekkan dataset.</p>
+</section>
+<section id="pengecekkan-outlier">
+<h3>3.1.2 Pengecekkan Outlier<a class="headerlink" href="#pengecekkan-outlier" title="Link to this heading">#</a></h3>
+<p>Outlier adalah nilai yang berbeda secara signifikan dari rentang data yang mengindikasikan kesalahan data. Outlier dapat mempengaruhi analisis statistik dalam machine learning karena dapat menyebabkan ketidakakuratan dalam membangun model. pada pengecekkan outlier menggunakan Z-score untuk mengukur seberapa jauh suatu data dari rata-rata dalam satuan standar deviasi. Data dengan Z-Score yang sangat tinggi atau rendah (biasanya di atas 3 atau di bawah -3) dianggap sebagai outlier.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">find_outlier</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="c1"># Menghitung Z-Score</span>
+    <span class="n">Z_Score</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">data</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+    <span class="n">outliers_zscore</span> <span class="o">=</span> <span class="n">Z_Score</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">Z_Score</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">index</span>
+    <span class="k">return</span> <span class="n">outliers_zscore</span>
+
+<span class="c1"># mengcopy dataset</span>
+<span class="n">df_clean</span> <span class="o">=</span> <span class="n">Df_Yeast</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># Menyimpan Outlier</span>
+<span class="n">outlier_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;int64&#39;</span><span class="p">,</span> <span class="s1">&#39;float64&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">outliers</span> <span class="o">=</span> <span class="n">find_outlier</span><span class="p">(</span><span class="n">df_clean</span><span class="p">[</span><span class="n">column</span><span class="p">])</span>
+    <span class="n">num_outliers</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
+    <span class="n">outlier_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
+     
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-----------------------&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Outlier(s) dalam kolom &#39;</span><span class="si">{</span><span class="n">column</span><span class="si">}</span><span class="s2">&#39;:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total outlier dalam kolom &#39;</span><span class="si">{</span><span class="n">column</span><span class="si">}</span><span class="s2">&#39;: </span><span class="si">{</span><span class="n">num_outliers</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total keseluruhan outlier:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">outlier_list</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-----------------------
+Outlier(s) dalam kolom &#39;mcg&#39;:
+Index([292, 514, 796, 797, 1356, 1432], dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;mcg&#39;: 6
+-----------------------
+Outlier(s) dalam kolom &#39;gvh&#39;:
+Index([29, 326, 506, 745, 1039, 1423], dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;gvh&#39;: 6
+-----------------------
+Outlier(s) dalam kolom &#39;alm&#39;:
+Index([85, 988, 989, 990, 1119, 1120, 1183, 1184], dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;alm&#39;: 8
+-----------------------
+Outlier(s) dalam kolom &#39;mit&#39;:
+Index([  31,  209,  271,  333,  433,  458,  470,  501,  598,  648,  732,  786,
+        988,  989,  990, 1090, 1397, 1454, 1462],
+      dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;mit&#39;: 19
+-----------------------
+Outlier(s) dalam kolom &#39;erl&#39;:
+Index([219, 304, 306, 395, 488, 500, 506, 659, 707, 739, 764, 841, 1058, 1077], dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;erl&#39;: 14
+-----------------------
+Outlier(s) dalam kolom &#39;pox&#39;:
+Index([5, 84, 110, 175, 229, 250, 319, 558, 592, 609, 720, 759, 1145, 1388,
+       1389],
+      dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;pox&#39;: 15
+-----------------------
+Outlier(s) dalam kolom &#39;vac&#39;:
+Index([ 118,  339,  393,  475,  503,  553,  788,  796,  811,  955,  962,  963,
+        986,  987,  988,  989,  990,  997,  998,  999, 1000, 1125, 1182, 1192,
+       1328, 1332, 1395],
+      dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;vac&#39;: 27
+-----------------------
+Outlier(s) dalam kolom &#39;nuc&#39;:
+Index([  51,  114,  148,  271,  323,  392,  470,  533,  587,  692,  702,  716,
+        875,  881,  882,  890,  892, 1038, 1079, 1104, 1105, 1114, 1122, 1149,
+       1170, 1201, 1213, 1222, 1223, 1252, 1259, 1275, 1287, 1357, 1382, 1415,
+       1448, 1452, 1455, 1459, 1472],
+      dtype=&#39;int64&#39;)
+Total outlier dalam kolom &#39;nuc&#39;: 41
+Total keseluruhan outlier: 136
+</pre></div>
+</div>
+</div>
+</div>
+<p>hasil dari pengecekkan outlier menunjukkan data memiliki outlier. pada kolom ‘Mcg’ memiliki total outlier sebanyak 6 hingga kolom ‘Nuc’ memiliki total outlier sebanyak 41. total keseluruhan dari semua outlier pada kolom data sebanyak 136 outlier</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menghapus duplikasi dalam daftar indeks outlier</span>
+<span class="n">outlier_clean</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">outlier_list</span><span class="p">))</span>
+
+<span class="c1"># Menghapus outlier dari Data</span>
+<span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">outlier_clean</span><span class="p">)</span>
+
+<span class="c1"># Data setelah penghapusan outlier</span>
+<span class="n">data_after_clean</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Jumlah data sebelum dan sesudah penghapusan outlier</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;jumlah outlier yang akan dihapus : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">outlier_list</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah data setelah penghapusan outlier:&quot;</span><span class="p">,</span> <span class="n">data_after_clean</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jumlah outlier yang akan dihapus :  136
+Jumlah data setelah penghapusan outlier: 1358
+</pre></div>
+</div>
+</div>
+</div>
+<p>jumlah data sekara setelah penghapus outlier adalah 1358. data ini telah bersih dari outlier sehingga dapat dilanjutkan ke tahap berikutnya.</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="permodelan">
+<h1>4. Permodelan<a class="headerlink" href="#permodelan" title="Link to this heading">#</a></h1>
+<p>Permodelan merupakan proses membangun dan melatih model komputer yang dapat mempelajari pola dari data dan digunakan untuk melakukan tugas tertentu, seperti klasifikasi, prediksi, atau pengenalan pola.</p>
+<section id="permodelan-dengan-menggunakan-knn">
+<h2>4.1 Permodelan dengan menggunakan KNN<a class="headerlink" href="#permodelan-dengan-menggunakan-knn" title="Link to this heading">#</a></h2>
+<p>KNN merupakan  algoritma berbasis instance yang berarti ia membuat prediksi berdasarkan kemiripan (similarity) antara instance baru dengan instance yang ada dalam dataset pelatihan.</p>
+<p>Langkah-langkah KNN :</p>
+<ul class="simple">
+<li><p>Memilih K: Tentukan nilai K (jumlah tetangga terdekat).</p></li>
+</ul>
+<ul class="simple">
+<li><p>Menghitung Jarak: Hitung jarak antara instance baru dan semua instance dalam data pelatihan.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Menentukan K Tetangga Terdekat: Pilih K instance dalam data pelatihan yang memiliki jarak terpendek ke instance baru.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Membuat Prediksi berdasarkan kelas K tetangga terdekat.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span>
+
+<span class="c1"># memisahkan fitur dan target</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;localization_site&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;localization_site&#39;</span><span class="p">]</span>
+
+<span class="c1"># membagi dataset menjadi data train dan data test</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Inisialisasi model KNN dengan K=3</span>
+<span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Melatih model</span>
+<span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi pada data uji</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Menghitung akurasi</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi model KNN:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Classification Report : </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi model KNN: 54.0 %
+Classification Report : 
+               precision    recall  f1-score   support
+
+         CYT       0.45      0.67      0.54        72
+         EXC       0.38      0.50      0.43        10
+         ME1       0.60      0.55      0.57        11
+         ME2       0.29      0.20      0.24        10
+         ME3       0.85      0.70      0.77        40
+         MIT       0.65      0.47      0.54        47
+         NUC       0.52      0.50      0.51        72
+         POX       0.00      0.00      0.00         1
+         VAC       0.00      0.00      0.00         9
+
+    accuracy                           0.54       272
+   macro avg       0.42      0.40      0.40       272
+weighted avg       0.54      0.54      0.53       272
+
+/shared-libs/python3.9/py/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/shared-libs/python3.9/py/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/shared-libs/python3.9/py/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+</pre></div>
+</div>
+</div>
+</div>
+<p>Akurasi model dengan menggunakan KNN mendapatkan Hasil sebesar 54%</p>
+</section>
+<section id="permodelan-dengan-menggunakan-naive-bayes">
+<h2>4.2 Permodelan dengan menggunakan Naive Bayes<a class="headerlink" href="#permodelan-dengan-menggunakan-naive-bayes" title="Link to this heading">#</a></h2>
+<p>Naive Bayes adalah algoritma pembelajaran mesin yang digunakan untuk klasifikasi. Algoritma ini didasarkan pada Teorema Bayes, yang menghitung probabilitas suatu kejadian berdasarkan pengetahuan sebelumnya tentang kondisi yang terkait dengan kejadian tersebut</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span>
+
+<span class="c1"># memisahkan fitur dan target</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;localization_site&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;localization_site&#39;</span><span class="p">]</span>
+
+<span class="c1"># membagi dataset menjadi data train dan data test</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># membuat model gaussian</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+
+<span class="c1"># melatih model dengan data train</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># prediksi pada data uji</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+
+<span class="c1"># evaluasi model</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi model KNN:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Classification Report : </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi model KNN: 59.9 %
+Classification Report : 
+               precision    recall  f1-score   support
+
+         CYT       0.50      0.71      0.58        72
+         EXC       0.50      0.70      0.58        10
+         ME1       0.67      0.55      0.60        11
+         ME2       0.33      0.40      0.36        10
+         ME3       0.88      0.90      0.89        40
+         MIT       0.65      0.60      0.62        47
+         NUC       0.62      0.43      0.51        72
+         POX       0.00      0.00      0.00         1
+         VAC       0.00      0.00      0.00         9
+
+    accuracy                           0.60       272
+   macro avg       0.46      0.48      0.46       272
+weighted avg       0.59      0.60      0.59       272
+
+/shared-libs/python3.9/py/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/shared-libs/python3.9/py/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/shared-libs/python3.9/py/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+</pre></div>
+</div>
+</div>
+</div>
+<p>Akurasi model dengan menggunakan Naive Bayes mendapatkan Hasil sebesar 59%</p>
+</section>
+<section id="prediksi-data">
+<h2>4.3 Prediksi Data<a class="headerlink" href="#prediksi-data" title="Link to this heading">#</a></h2>
+<p>Prediksi data dari model yang dibuat menggunakan Naive Bayes dikarenakan akurasinya lebih tinggi yaitu sebesar 59%.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.39</span><span class="p">,</span><span class="mf">0.54</span><span class="p">,</span><span class="mf">0.21</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.53</span><span class="p">,</span><span class="mf">0.27</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;CYT&#39;]
+/shared-libs/python3.9/py/lib/python3.9/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but GaussianNB was fitted with feature names
+  warnings.warn(
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="evaluasi">
+<h1>5. Evaluasi<a class="headerlink" href="#evaluasi" title="Link to this heading">#</a></h1>
+<p>Dari model yang telah dibuat yaitu KNN dan Naive Bayes memiliki akurasi yang berbeda dengan jumlah data, pada KNN memiliki akurasi data sebesar 54% sedangkan pada Naive Bayes memiliki akurasi data sebesar 59%.</p>
+<a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=e5f69297-7ac5-40b5-90cb-ea1945d4bb7e' target="_blank">
+<img alt='Created in deepnote.com' style='display:inline;max-height:16px;margin:0px;margin-right:7.5px;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkxhbmRpbmciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMzUuMDAwMDAwLCAtNzkuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjM1LjAwMDAwMCwgNzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yMCIgZmlsbD0iIzAyNjVCNCIgcG9pbnRzPSIyLjM3NjIzNzYyIDgwIDM4LjA0NzY2NjcgODAgNTcuODIxNzgyMiA3My44MDU3NTkyIDU3LjgyMTc4MjIgMzIuNzU5MjczOSAzOS4xNDAyMjc4IDMxLjY4MzE2ODMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNS4wMDc3MTgsODAgQzQyLjkwNjIwMDcsNzYuNDU0OTM1OCA0Ny41NjQ5MTY3LDcxLjU0MjI2NzEgNDguOTgzODY2LDY1LjI2MTk5MzkgQzUxLjExMjI4OTksNTUuODQxNTg0MiA0MS42NzcxNzk1LDQ5LjIxMjIyODQgMjUuNjIzOTg0Niw0OS4yMTIyMjg0IEMyNS40ODQ5Mjg5LDQ5LjEyNjg0NDggMjkuODI2MTI5Niw0My4yODM4MjQ4IDM4LjY0NzU4NjksMzEuNjgzMTY4MyBMNzIuODcxMjg3MSwzMi41NTQ0MjUgTDY1LjI4MDk3Myw2Ny42NzYzNDIxIEw1MS4xMTIyODk5LDc3LjM3NjE0NCBMMzUuMDA3NzE4LDgwIFoiIGlkPSJQYXRoLTIyIiBmaWxsPSIjMDAyODY4Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwzNy43MzA0NDA1IEwyNy4xMTQ1MzcsMC4yNTcxMTE0MzYgQzYyLjM3MTUxMjMsLTEuOTkwNzE3MDEgODAsMTAuNTAwMzkyNyA4MCwzNy43MzA0NDA1IEM4MCw2NC45NjA0ODgyIDY0Ljc3NjUwMzgsNzkuMDUwMzQxNCAzNC4zMjk1MTEzLDgwIEM0Ny4wNTUzNDg5LDc3LjU2NzA4MDggNTMuNDE4MjY3Nyw3MC4zMTM2MTAzIDUzLjQxODI2NzcsNTguMjM5NTg4NSBDNTMuNDE4MjY3Nyw0MC4xMjg1NTU3IDM2LjMwMzk1NDQsMzcuNzMwNDQwNSAyNS4yMjc0MTcsMzcuNzMwNDQwNSBDMTcuODQzMDU4NiwzNy43MzA0NDA1IDkuNDMzOTE5NjYsMzcuNzMwNDQwNSAwLDM3LjczMDQ0MDUgWiIgaWQ9IlBhdGgtMTkiIGZpbGw9IiMzNzkzRUYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+' > </img>
+Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Content with notebooks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">–MEMPREDIKSI LOKASI YEAST (RAGI) BERDASARKAN PROTEIN–</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-yeast">1.1 Apa itu Yeast</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-dari-studi-kasus-ini">1.2 Tujuan dari Studi kasus ini</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-pemahaman-data">2. Data Understanding (Pemahaman Data)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengumpulan-data-collection-data">2.1 Pengumpulan Data (collection data)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-data">2.1.1 Sumber Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#akses-data">2.1.2 Akses Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-data">2.2 Deskripsi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">2.2.1 Visualisasi Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-fitur">2.2.2 Penjelasan Fitur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-klasifikasi">2.2.3 Penjelasan Klasifikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggabungan-data">2.2 Penggabungan Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-pemrosesan-awal-data">3. Preprocessing (Pemrosesan awal data)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-data">3.1 Kualitas data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengecekkan-missing-value">3.1.1 Pengecekkan Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengecekkan-outlier">3.1.2 Pengecekkan Outlier</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#permodelan">4. Permodelan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permodelan-dengan-menggunakan-knn">4.1 Permodelan dengan menggunakan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permodelan-dengan-menggunakan-naive-bayes">4.2 Permodelan dengan menggunakan Naive Bayes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediksi-data">4.3 Prediksi Data</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">5. Evaluasi</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
